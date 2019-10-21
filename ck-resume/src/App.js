@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import { Link } from 'react-router-dom';
+import Main from "./components/main"
 
 class App extends Component {
   render() {
@@ -25,7 +26,10 @@ class App extends Component {
                 <a href="#">Link</a>
             </Navigation>
         </Drawer>
-        <Content />
+      <content>
+        <div className="page-content"/>
+        <Main/>
+      </content>
     </Layout>
 </div>
 
