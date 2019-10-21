@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+
 
 class Projects extends Component {
     constructor(props) {
@@ -6,24 +8,18 @@ class Projects extends Component {
         this.state = { activeTab: 2 };
     }
 
-            
-                render() {
-                    return (
-                        <div className="demo-tabs">
-                            <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-                                <Tab>Starks</Tab>
-                                <Tab>Lannisters</Tab>
-                                <Tab>Targaryens</Tab>
-                            </Tabs>
-                            <section>
-                                <div className="content">Content for the tab: {this.state.activeTab}</div>
-                            </section>
-                        </div>    
-                    );
-                }
-            }
+    render () {
+        return (
+            <div>
+            <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+              <Tab>React</Tab>
+              <Tab>NodeJS</Tab>
+              <Tab>Laravel</Tab>
+              <Tab>Css</Tab>
+            </Tabs>
+    
         )
     }
-}
 
+}
 export default Projects;
