@@ -21,9 +21,36 @@ class Projects extends Component {
   toggleCategories() {
     if (this.state.activeTab === 0) {
       return (
-        <div>
-          <h1>this is reacgt</h1>
-        </div>
+  <div>
+      <Card shadow={0} style={{width: '512px', margin: 'auto'}}>
+    <CardTitle style={{color: '#fff', height: '176px', 
+                background: 'url(https://i.udemycdn.com/course/750x422/434980_e515_2.jpg) center / cover'}}>Welcome</CardTitle>
+    <CardText>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Mauris sagittis pellentesque lacus eleifend lacinia...
+    </CardText>
+    <CardActions border>
+        <Button colored>Get Started</Button>
+    </CardActions>
+    <CardMenu style={{color: '#fff'}}>
+        <IconButton name="share" />
+    </CardMenu>
+</Card>
+
+
+<Card shadow={0} style={{width: '320px', height: '320px', margin: 'auto'}}>
+    <CardTitle expand style={{color: '#fff',
+     background: 'url(https://i.udemycdn.com/course/750x422/434980_e515_2.jpg) bottom right 15% no-repeat #46B6AC'}}>Update</CardTitle>
+    <CardText>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Aenan convallis.
+    </CardText>
+    <CardActions border>
+        <Button colored>View Updates</Button>
+    </CardActions>
+</Card>
+  </div>
+
       );
     } else if (this.state.activeTab === 1) {
       return (
